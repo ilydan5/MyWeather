@@ -1,0 +1,130 @@
+body{
+    color: var(--white-hue);
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+.container{
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+fieldset{
+  color: var(--white-hue);
+    display: block;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0em;
+    -webkit-padding-before: 0em;
+    -webkit-padding-end: 0em;
+    -webkit-padding-after: 0em;
+    border: 0px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    min-width: -webkit-min-content;
+    padding: 30px;
+}
+
+.ghost-input, p {
+    display: block;
+    font-weight:300;
+    width: 100%;
+    font-size: 25px;
+    border:0px;
+    outline: none;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #4b545f;
+    background: #fff;
+    font-family: Open Sans,Verdana;
+    padding: 10px 15px;
+    margin: 30px 0px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .ghost-input:focus {
+    border-bottom:1px solid #ddd;
+  }
+  .ghost-button {
+      font-size: 15px;
+      color: black;
+    background-color: transparent;
+    border:2px solid #ddd;
+    padding:10px 30px;
+    width: 100%;
+    min-width: 350px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  .ghost-button:hover {
+    border:2px solid #515151;
+  }
+
+  a{
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+  }
+
+:root {
+    --black-hue: black;
+    --white-hue: white;
+    --theme-darkness: 1;
+}
+
+:root[theme='dark'] {
+  --black-hue: black;
+  --white-hue: white;
+  --theme-darkness: 1;
+
+
+
+  filter: invert(1);
+}
+
+nav {
+  background: var(--black-hue);
+  padding: 1.3rem;
+  
+  font-size: 25px;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+input[type=button] {
+  background: var(---white-hue);
+    color: var(--white-hue);
+    padding: 0.3rem;
+    font-size: 1rem;
+    border:2px solid;
+    border-radius: 5px;;
+}
+
+html{
+  background: var(--white-hue);
+}
+
+header{
+  width: 98%;
+}
+
+p{
+  margin-top: 0.2em ;
+  margin-bottom: 0.2em ;
+}

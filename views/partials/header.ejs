@@ -1,0 +1,26 @@
+<header>
+  <nav class="navbar bg-dark text-white">
+    <div class="container-fluid" >
+      <a class="navbar-brand">
+        MyWeather
+      </a>
+      <input type="button" value="Смена темы" id="toggle-theme" />
+      <script>
+        const toggleBtn = document.querySelector("#toggle-theme");
+
+        toggleBtn.addEventListener('click', (e) => {
+          console.log("Switching theme");
+          let theme = 'light';
+          if (document.documentElement.hasAttribute('theme')) {
+            document.documentElement.removeAttribute('theme');
+          }
+          else {
+            document.documentElement.setAttribute('theme', 'dark');
+            theme = 'dark';
+          }
+          localStorage.setItem('theme', theme);
+        });
+      </script>
+    </div>
+  </nav>
+</header>
